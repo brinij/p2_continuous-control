@@ -30,9 +30,12 @@ The task is episodic, and in order to solve the environment, the agent must get 
         - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux.zip)
         - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher.app.zip)
         - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86.zip)
-        - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86_64.zip)
+        - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86_64.zip) 
 
-2. Place the file in the DRLND GitHub repository, in the `p2_continuous-control/` folder, and unzip (or decompress) the file. 
+2.  Place the file in this GitHub repository, in the `p2_continuous-control/` folder, and unzip (or decompress) the file.
+3. Open new terminal and run your virtual environment with Python3 : `$source activate drlnd`
+4. In terminal, place yourself inside of p2_continuous-control folder
+5. Run notebook: `$jupyter notebook Continuous_Control.ipynb`
 
 ### Instructions
 
