@@ -6,11 +6,11 @@
 
 ### Learning Algorithm : DDPG
 
-Deep Deterministic Policy Gradient ([DDPG](https://arxiv.org/pdf/1509.02971.pdf)) is the RL algorithm that adapts the success ideas of Deep Q-Learning (DQN) to the continuous action domain. It is also an actor-critic, model-free algorithm where two deep neural networks are used. The actor network is used to approximate the optimal policy deterministically. That means it always outputs the best believed action for any given state. The critic learns to evaluate the optimal action value function by using the actors best believed action.
+Deep Deterministic Policy Gradient ([DDPG](https://arxiv.org/pdf/1509.02971.pdf)) is the RL algorithm that adapts the success ideas (replay buffer and target Q network) of Deep Q-Learning (DQN) to the continuous action domain. It is also an actor-critic, off-policy, model-free algorithm where two deep neural networks are used. The actor network is used to approximate the optimal policy deterministically. That means it always outputs the best believed action for any given state. The critic learns to evaluate the optimal action value function by using the actors best believed action.
 
 
 <p align="center">
-<img src="https://github.com/brinij/p1_navigation/blob/master/DDPG_algorithm.png" width="600">
+<img src="https://github.com/brinij/p2_continuous-control/blob/master/DDPG_algorithm.png" width="600">
 </p>
 
 
@@ -35,7 +35,7 @@ Parameters that showed the best results are:
 Environment has been solved in 419 learning episodes where each of them lasted 300 steps. The environment is considered solved when in the last 100 episodes average reward is 13. The graph of rewards during the learning period is shown in the image below:
 
 <p align="center">
-<img src="https://github.com/brinij/p1_navigation/blob/master/rewards.png" width="400">
+<img src="https://github.com/brinij/p2_continuous-control/blob/master/p2_rewards.png" width="400">
 </p>
 
 ## Improvements
