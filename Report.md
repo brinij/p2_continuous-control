@@ -56,11 +56,20 @@ Parameters that showed the best results are:
 
 ### Result
 
-Environment has been solved in 419 learning episodes where each of them lasted 1000 steps. The environment is considered solved when in the last 100 episodes average reward is 30. The graph of rewards during the learning period is shown in the image below:
+The Environment has been solved in 369 learning episodes where each of them lasted 1000 steps. The environment is considered solved when in the last 100 episodes average reward is 30. The graph of rewards during the learning period is shown in the image below:
 
 <p align="center">
 <img src="https://github.com/brinij/p2_continuous-control/blob/master/p2_rewards.png" width="400">
 </p>
+
+Episode 100	Average Score: 1.30	Score: 1.76
+Episode 200	Average Score: 7.07	Score: 12.98
+Episode 300	Average Score: 17.27	Score: 28.50
+Episode 400	Average Score: 25.34	Score: 13.10
+Episode 469	Average Score: 30.04	Score: 23.75
+Environment solved in 369 episodes!	Average Score: 30.04
+Episode 500	Average Score: 31.14	Score: 27.01
+Episode 600	Average Score: 31.96	Score: 34.27
 
 And here is gif of the agent performing in the environment after training:
 
