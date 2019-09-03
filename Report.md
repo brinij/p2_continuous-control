@@ -25,6 +25,17 @@ The pseudocode of ([DDPG](https://arxiv.org/pdf/1509.02971.pdf)) algorithm is sh
 <img src="https://github.com/brinij/p2_continuous-control/blob/master/DDPG_algorithm.png" width="600">
 </p>
 
+### Model Architecture
+This is the architecture of the **Actor Network** :
+<p align="center">
+<img src="https://github.com/brinij/p2_continuous-control/blob/master/ActorNetwork.png" width="600">
+</p>
+
+This is the architecture of the **Critic Network** :
+<p align="center">
+<img src="https://github.com/brinij/p2_continuous-control/blob/master/CriticNetwork.png" width="600">
+</p>
+
 
 ### Implementation Details
 
