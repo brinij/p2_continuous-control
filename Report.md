@@ -15,13 +15,9 @@ the algorithm to benefit from learning across a set of uncorrelated transitions.
 
 - **Soft-update** is used instead of directly copying the weights to the target network. First, the copy of actor and critic networks, that are used for calculating the target values, are created. Then, the weights of these target networks are updated by having them slowly track the learned networks: `θ' ← τθ + (1 − τ)θ'` with `τ <= 1`. This means that the target values are constrained to change slowly, greatly improving the stability of learning.
 
-- **Batch Normalization** is a technique that normalizes each dimension across the samples in a minibatch to have unit mean and variance. It solves the problem when the input states are low dimensional feature vector of observations which contains different components with different physical units (for example, position in centimeters and angular velocity in radians)
+- **Batch Normalization** is a technique that normalizes each dimension across the samples in a minibatch to have unit mean and variance. It solves the problem when the input states are low dimensional feature vector of observations which contains different components with different physical units (for example, position in centimeters and angular velocity in radians) where ranges may vary.
 
-
-
-when learning from low dimensional feature vector observations, the different components of the
-observation may have different physical units (for example, positions versus velocities) and the
-ranges may vary across environments.
+- **Noise** is added to actor policy in order to increse the exploration which is the major challenge of learning in continuous action spaces. An advantage of off-policies algorithms such as DDPG is that the problem of exploration can be treated independently from the learning algorithm. For this project, an Ornstein-Uhlenbeck process (Uhlenbeck & Ornstein, 1930) with `θ = 0.15` and `σ = 0.1` is used, which models the velocity of a Brownian particle with friction, which results in temporally correlated values centered around 0. It performs well in physical environments that have momentum.
 
 
 <p align="center">
