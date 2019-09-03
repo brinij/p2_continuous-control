@@ -80,4 +80,4 @@ And here is gif of the agent performing in the environment after training:
 </p>
 
 ## Improvements
-In order to get the best possible results in continuous domain environment with multiple agents, it would be necessary to implement [D4PG](https://openreview.net/forum?id=SyZipzbCb) algorithm which showed amazing results across many different environment by using **Prioritized Experience Replay** and **N-step returns** techniques.
+In order to get the best possible results in continuous domain environment with multiple agents, it would be necessary to implement [D4PG](https://openreview.net/forum?id=SyZipzbCb) algorithm which showed amazing results across many different environments by using **Prioritized Experience Replay** and **N-step returns** techniques.
