@@ -52,7 +52,7 @@ Parameters that showed the best results are:
 - `LR_ACTOR`    = 3e-4 , learning rate of the actor
 - `LR_CRITIC`   = 3e-4 , learning rate of the critic
 - `UPDATE_EVERY`= 5, how often to update the network
-- `WEIGHT_DECAY` = 0 , # L2 weight decay
+- `WEIGHT_DECAY` = 0 ,  L2 weight decay
 
 ### Result
 
@@ -60,6 +60,12 @@ Environment has been solved in 419 learning episodes where each of them lasted 1
 
 <p align="center">
 <img src="https://github.com/brinij/p2_continuous-control/blob/master/p2_rewards.png" width="400">
+</p>
+
+And here is gif of the agent performing in the environment after training:
+
+<p align="center">
+<img src="https://github.com/brinij/p2_continuous-control/blob/master/reacher_trained_solution.gif" width="600">
 </p>
 
 ## Improvements
