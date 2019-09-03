@@ -19,6 +19,7 @@ the algorithm to benefit from learning across a set of uncorrelated transitions.
 
 - **Noise** is added to actor policy in order to increse the exploration which is the major challenge of learning in continuous action spaces. An advantage of off-policies algorithms such as DDPG is that the problem of exploration can be treated independently from the learning algorithm. For this project, an Ornstein-Uhlenbeck process (Uhlenbeck & Ornstein, 1930) with `θ = 0.15` and `σ = 0.1` is used, which models the velocity of a Brownian particle with friction, which results in temporally correlated values centered around 0. It performs well in physical environments that have momentum.
 
+The pseudocode of ([DDPG](https://arxiv.org/pdf/1509.02971.pdf)) algorithm is shown below:
 
 <p align="center">
 <img src="https://github.com/brinij/p2_continuous-control/blob/master/DDPG_algorithm.png" width="600">
